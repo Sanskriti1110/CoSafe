@@ -169,7 +169,7 @@ nav ul li a:hover{
     cursor: pointer;
 }
 .slide:hover .banner-text p{
-    position: absolute;;
+    position: absolute;
     top: 50%;
     left: 50%;
     width: 500px;
