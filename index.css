@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+/*------NAV BAR ---*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 13vh;
+    background-color: black;
+    z-index: 50;
+}
+nav ul{
+    float: right;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block; 
+    margin-left: 50px;
+    padding-bottom: 5px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 2px;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 23px;
+    font-family: 'Architects Daughter', cursive;
+    border-bottom: 2px dashed transparent;
+    transition: border-bottom 0.4s 2ms;
+}
+nav ul li a:hover{
+    border-bottom: 2px dashed white;
+    font-weight: bold;
+}
+
+.logo{
+    color: white;
+    letter-spacing: 5px;
+    font-size: 40px;
+    font-family: 'Lobster', cursive;
+    position: fixed;
+    left: 120px;
+}/*
+.loader{
+    position: absolute;
+    top: -30px;
+    left: -40px;
+    width: 220px;
+    height: 110px;
+    background-color: transparent;
+}
+.loader span{
+    position: absolute;
+    border: 8px solid rgb(25, 107, 175);
+    
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, rgba(124,56,180,1) 0%,rgba(63,213,128,1) 100%,rgba(79,45,157,1) 100%); 
+    
+}
+.loader span:before{
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    width: 8px;
+    height: 50%;
+    background-color: crimson;
+}
+.loader span:after{
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    right: -8px;
+    width: 8px;
+    height: 50%;
+    background-color: #ff0;
+}
+.loader span:nth-child(1){
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: spin 8s linear infinite;
+}
+.loader span:nth-child(2){
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    animation: spin 4s linear infinite;
+}
+ @keyframes spin{
+     0%{
+         transform: rotateY(0deg);
+     }
+     100%{
+         transform: rotateY(360deg);
+     }
+ } */
+
+ /*----BANNER---*/
+
+.banner{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    border: 2px solid black;     
+}
+.slide{
+    position: relative;
+    height: 100%;
+    flex: 1;
+    border-right: 2px solid black;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.slide:nth-child(1){
+    background: url(/images/banner4-coronavirus.jpg) no-repeat center ;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.7);
+}
+.slide:nth-child(2){
+    background: url(/images/banner1-maskgloves.jpg) no-repeat center;
+    background-size: cover;
+}
+.slide:nth-child(3){
+    background: url(/images/banner3-hotel.jpg) no-repeat center;
+    background-size: cover;
+}
+.slide:nth-child(4){
+    background: url(/images/banner2-laptops.jpeg) no-repeat center;
+    background-size: cover;
+}
+.slide:nth-child(5){
+    background: url(/images/banner6-eLearning.png) no-repeat center;
+    background-size: cover;
+}
+.slide:nth-child(6){
+    background: url(/images/banner5-unemployment.jpg) no-repeat center;
+    background-size: cover;
+    border-right: none;
+}
+
+.banner-text h2 {
+    position: absolute;
+    padding-top: 50%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    font-size: 8em;
+    
+}
+.banner-text p{
+   visibility: hidden;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+.slide:hover{
+    flex-grow:6;
+    cursor: pointer;
+}
+.slide:hover .banner-text p{
+    position: absolute;;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 250px;
+    visibility: visible;
+    text-align: center;
+    background-color: rgba(0,0,0,0.8);
+    padding: 15px;
+    border-radius: 25px;
+    color: white;
+    font-size: 24px;
+    
+}
+.slide:hover .banner-text h2{
+    visibility: hidden;
+}

@@ -1,0 +1,85 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.content{
+  position: relative;
+  box-sizing: border-box;
+}
+.centered-y {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+  
+.distribution-map {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: black;
+  
+}
+.distribution-map > img {
+  width: 80%;
+  height: calc(100vh - 115px);
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.distribution-map .map-point {
+  cursor: pointer;
+  outline: none;
+  z-index: 0;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 20px;
+  opacity: 0.8;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -moz-transition: opacity 0.25s ease-in-out  0.25s, width 0.25s ease-in-out  0.25s, height 0.25s ease-in-out  0.25s, z-index 0.25s ease-in-out  0.25s;
+  -o-transition: opacity 0.25s ease-in-out  0.25s, width 0.25s ease-in-out  0.25s, height 0.25s ease-in-out  0.25s, z-index 0.25s ease-in-out  0.25s;
+  -webkit-transition: opacity 0.25s ease-in-out , width 0.25s ease-in-out , height 0.25s ease-in-out , z-index 0.25s ease-in-out ;
+  -webkit-transition: opacity 0.25s ease-in-out  0.25s, width 0.25s ease-in-out  0.25s, height 0.25s ease-in-out  0.25s, z-index 0.25s ease-in-out  0.25s;
+  transition: opacity 0.25s ease-in-out  0.25s, width 0.25s ease-in-out  0.25s, height 0.25s ease-in-out  0.25s, z-index 0.25s ease-in-out  0.25s;
+  background: rgba(26, 26, 26, 0.85);
+  border: 5px solid rgb(131, 115, 115);
+}
+.distribution-map .map-point .content {
+  opacity: 0;
+  -webkit-transition: opacity 0.25s ease-in-out ;
+  transition: opacity 0.25s ease-in-out ;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  overflow: overlay;
+}
+.distribution-map .map-point:active, .distribution-map .map-point:hover {
+  margin: 0;
+  padding: 0;
+  opacity: 1;
+  width: 250px;
+  height: 200px;
+  color: #e5e5e5;
+  z-index: 1;
+  -webkit-transition: opacity 0.25s ease-in-out , width 0.25s ease-in-out , height 0.25s ease-in-out ;
+  transition: opacity 0.25s ease-in-out , width 0.25s ease-in-out , height 0.25s ease-in-out ;
+}
+.distribution-map .map-point:active .content, .distribution-map .map-point:hover .content {
+  opacity: 1;
+  -moz-transition: opacity 0.25s ease-in-out  0.25s, height 0.25s ease-in-out , overflow 0.25s ease-in-out ;
+  -o-transition: opacity 0.25s ease-in-out  0.25s, height 0.25s ease-in-out , overflow 0.25s ease-in-out ;
+  -webkit-transition: opacity 0.25s ease-in-out , height 0.25s ease-in-out , overflow 0.25s ease-in-out ;
+  -webkit-transition: opacity 0.25s ease-in-out  0.25s, height 0.25s ease-in-out , overflow 0.25s ease-in-out ;
+  transition: opacity 0.25s ease-in-out  0.25s, height 0.25s ease-in-out , overflow 0.25s ease-in-out  ;
+  overflow: hidden;
+}
