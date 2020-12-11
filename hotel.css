@@ -153,7 +153,6 @@ input:focus, .hotel-book button:focus{
 .hotel-book{
     position: relative;
     padding-left: 10px;
-    
     width: 500px;
     margin: 30px 20px;
     border-left: 2px solid lightslategrey;
@@ -207,3 +206,34 @@ input:focus, .hotel-book button:focus{
     background-color: rgb(30, 139, 134);
     cursor: pointer;
 }
+.center {
+    text-align: center;
+  }
+  
+  .pagination {
+    display: inline-block;
+    margin: 30px;
+  }
+  
+  .pagination a {
+    color: white;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+    font-size: 25px;
+  }
+  
+  .pagination a.active {
+    background-color: lightseagreen;
+    color: black;
+    border: 1px solid lightseagreen;
+  }
+  
+  .pagination a:hover:not(.active) {
+      background-color: lightslategray;
+      color: black;
+      border: 1px solid lightslategray;
+    }
