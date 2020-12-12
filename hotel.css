@@ -126,12 +126,14 @@ input:focus, .hotel-book button:focus{
     outline: none;
 }
 .hotel-container{
+    width: 100%;
     padding: 0 150px ;
 }
 .hotel-box{
     border: 2px solid lightslategrey;
     margin-top: 20px;
     display: flex;
+    width: 100%;
 }
 .hotel-box:hover{
     box-shadow: 5px 5px 4px 0px rgba(119,136,153,0.76);
@@ -142,15 +144,20 @@ input:focus, .hotel-book button:focus{
     height: 300px;
     padding: 10px;
 }
+.stack{
+    display: flex;
+}
 .hotel-detail{
     padding: 30px;
     font-size:20px;
+    
 }
 .hotel-detail ul{
     padding-left: 20px;
     font-size: 22px;
 }
 .hotel-book{
+    display: block;
     position: relative;
     padding-left: 10px;
     width: 500px;
@@ -182,27 +189,29 @@ input:focus, .hotel-book button:focus{
 .cost sup{
     font-size: 20px;
 }
-.hotel-book .book-button{
+.buttons{
     position: absolute;
-    bottom: 4%;
+    bottom: 5%;
     right: 0;
+    margin-top: 30px;
+}
+
+.book-button{
     background-color: lightseagreen;
     padding: 10px 20px;
-    font-size: 28px;
+    font-size: 25px;
     border-radius: 10px;
     border: none;
+    margin-left: 30px;
 }
-.hotel-book .view-detail{
-    position: absolute;
-    bottom: 4%;
-    left: 25%;
+.view-detail{
     background-color: lightseagreen;
     padding: 10px 20px;
     font-size: 25px;
     border-radius: 10px;
     border: none;
 }
-.hotel-book button:hover{
+.book-button:hover, .view-detail:hover{
     background-color: rgb(30, 139, 134);
     cursor: pointer;
 }
@@ -237,3 +246,99 @@ input:focus, .hotel-book button:focus{
       color: black;
       border: 1px solid lightslategray;
     }
+
+
+@media screen and (max-width: 1050px){
+    .location{ display: block;}
+}
+@media screen and (max-width:1680px){
+    .hotel-container{
+        padding: 0 30px;
+    }
+}
+@media screen and (max-width:1450px){
+    .hotel-blur-area{
+        margin: 50px 0;
+    }
+    .buttons button{
+        width: 100%;
+    }
+    .buttons{
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        margin-left: 20px;
+    }
+    .cost{
+        position: absolute;
+        right: 0;
+        top: 25%;
+        font-size:30px ;
+    }
+    .book-button{
+        margin-top: 10px;
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:1140px){
+    .stack{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .hotel-detail{
+        height: 70%;
+        margin: 10px;
+        font-size: 20px;
+        padding-top: 5px;
+    }
+    .hotel-detail ul{
+        padding-left: 40px;
+        padding-top: 0;
+    }
+    .hotel-detail ul li{
+        font-size: 18px;
+    }
+    .hotel-book{
+        height: 100%;
+        width: 100%;
+        margin:10px;
+        margin-top: 0;
+        padding: 0;
+        border-left: none;
+    }
+    .hotel-img img{
+        width: 300px;
+        height: 250px;
+    }
+    .buttons{
+        display: inline-block;
+        text-align: center;
+    }
+    .buttons button{
+        width: 150px;
+        margin: 5px;
+        margin-right: 15px;
+        padding: 5px;
+    }
+    
+    
+    .cost{
+        top: 0;
+        left: 0;
+        text-align: center;
+        width: 150px;
+        height: 50px;
+        font-size: 25px;
+        font-weight: bold;
+        background-color: transparent;
+        color: tomato;
+        border-top: 2px solid lightslategray;
+    }
+    .review{
+        position: absolute;
+        top: -300%;
+        font-size: 20px;
+    }
+}
