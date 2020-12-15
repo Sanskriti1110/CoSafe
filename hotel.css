@@ -20,7 +20,6 @@
 .hotel-heading{
     text-align: center;
     font-size: 4rem;
-       
     color: rgb(209, 19, 92);
 }
 .hotel-motive{
@@ -149,12 +148,16 @@ input:focus, .hotel-book button:focus{
 }
 .hotel-detail{
     padding: 30px;
-    font-size:20px;
-    
+    font-size:20px; 
+}
+.hotel-detail p{
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .hotel-detail ul{
     padding-left: 20px;
     font-size: 22px;
+    margin-top: 10px ;
 }
 .hotel-book{
     display: block;
@@ -296,6 +299,7 @@ input:focus, .hotel-book button:focus{
     .hotel-detail ul{
         padding-left: 40px;
         padding-top: 0;
+        margin-top: 0%;
     }
     .hotel-detail ul li{
         font-size: 18px;
