@@ -10,7 +10,7 @@ html{
 nav{
     list-style: none;
     text-decoration: none;
-    height: 8.0rem;
+    height: 10.0rem;
     background-color: black; 
 }
 .logo{
@@ -90,7 +90,7 @@ label #cancel{
         font-size: 1.7rem;
     }
 }
-@media (max-width: 860px){
+@media (max-width: 1420px){
     label #btn{
         display: block;
     }
@@ -125,49 +125,7 @@ label #cancel{
     }
     
 }
-
-/*------NAV BAR ---
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 13vh;
-    background-color: black;
-    z-index: 50;
-}
-nav ul{
-    float: right;
-}
-nav ul li{
-    list-style-type: none;
-    display: inline-block; 
-    margin-left: 5.0rem;
-    padding-bottom: 0.5rem;
-    
-}
-nav ul li a{
-    text-decoration: none;
-    padding: 0.2rem;
-    color: white;
-    letter-spacing: 0.2rem;
-    font-size: 2.3rem;
-    font-family: 'Architects Daughter', cursive;
-    border-bottom: 0.2rem solid transparent;
-    transition: border-bottom 0.4s 2ms;
-}
-nav ul li a:hover{
-    border-bottom: 0.2rem solid white;
-    font-weight: bold;
-}
-
-.logo{
-    color: white;
-    letter-spacing: 0.5rem;
-    font-size: 4.0rem;
-    font-family: 'Lobster', cursive;
-    position: fixed;
-    left: 12.0rem;
-}
+/*
 .loader{
     position: absolute;
     top: -3.0rem;
@@ -333,6 +291,11 @@ nav ul li a:hover{
 .slide:hover .banner-text h2{
     visibility: hidden;
 }
+@media screen and (max-width:1630px){
+    nav ul li{
+        margin-left: 2.0rem;
+    }
+}
 @media screen and (max-width:1112px){
     .wrapper{
         display: block;
@@ -349,3 +312,148 @@ nav ul li a:hover{
     }
     
 }
+
+
+
+footer{
+    color: white;
+    background: #111;
+    padding: 5.0rem 10.0rem;
+    
+  }
+  .main-content{
+    display: flex;
+  }
+  .main-content .box{
+    flex-basis: 50%;
+    padding: 1.0rem 2.0rem;
+  }
+  .box h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .box .content{
+    margin: 2.0rem 0 0 0;
+    position: relative;
+    font-size: 2.0rem;
+  }
+  
+  .box .content:before{
+    position: absolute;
+    content: '';
+    top: -1.0rem;
+    height: 0.2rem;
+    width: 100%;
+    background: #1a1a1a;
+  }
+  .box .content:after{
+    position: absolute;
+    content: '';
+    height: 0.2rem;
+    width: 15%;
+    background: crimson;
+    top: -1.0rem;
+  }
+  .left .content p{
+    text-align: justify;
+  }
+  .left .content .social{
+    margin: 2.0rem 0 0 0;
+  }
+  .left .content .social a{
+    padding: 0 0.2rem;
+  }
+  .left .content .social a span{
+    height: 4.0rem;
+    width: 4.0rem;
+    background: #1a1a1a;
+    line-height: 4.0rem;
+    text-align: center;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    transition: 0.3s;
+    color: crimson;
+  }
+  .left .content .social a span:hover{
+    background-color: rgb(173, 167, 167);
+  }
+  .center .content .fas{
+    font-size: 1.5rem;
+    background: #1a1a1a;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .center .content .fas:hover{
+    background: crimson;
+  }
+  .center .content .text{
+    font-size: 2.0rem;
+    font-weight: 500;
+    padding-left: 1.0rem;
+  }
+  .center .content .phone{
+    margin: 1.5rem 0;
+  }
+  .right form .text{
+    font-size: 1.8rem;
+    margin-bottom: 0.2rem;
+    color: #747171;
+  }
+  .right form .msg{
+    margin-top: 1.0rem;
+  }
+  .right form input, .right form .msgForm{
+    width: 100%;
+    font-size: 2.0rem;
+    color: white;
+    background: #151515;
+    padding-left: 1.0rem;
+    border: 0.1rem solid #222222;
+  }
+  .right form input:focus,
+  .right form .msgForm:focus{
+    outline:none;
+  }
+  .right form input{
+    height: 3.5rem;
+  }
+  .right form .btn{
+    margin-top: 1.0rem;
+  }
+  .right form .btn button{
+    height: 4.0rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: crimson;
+    font-size: 2.0rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+  }
+  .right form .btn button:hover{
+    background: #b11f1f;
+  }
+
+  @media screen and (max-width: 900px) {
+    footer{
+      position: relative;
+      bottom: 0;
+    }
+    .main-content{
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .main-content .box{
+      margin: 0.5rem 0;
+    }
+  }
+  

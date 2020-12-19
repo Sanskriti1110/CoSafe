@@ -6,6 +6,7 @@ html{
     background-size: cover;
     filter: opacity(90%);
     height: 100%;  
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -221,7 +222,7 @@ input:focus, .hotel-book button:focus{
     background-color: rgb(30, 139, 134);
     cursor: pointer;
 }
-.center {
+.middle {
     text-align: center;
   }
   
