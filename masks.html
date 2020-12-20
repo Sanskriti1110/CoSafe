@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" banner-text="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="masks.css">
+    <link rel="stylesheet" href="masks.css"> 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
@@ -12,34 +11,70 @@
     <title>Document</title>
 </head>
 <body>
-    <nav>
-        <input type="checkbox" id='check'>
-        <label for="check">
-            <i class='fas fa-bars' id='btn'></i>
-            <i class='fas fa-times' id='cancel'></i>
-        </label>
-        <div class="logo">
-            <h4>CoSafe</h4>
-            <div class="loader">
-                <span></span>
-                <span></span>
+    <div class="donate-wrapper">
+        <a href="index.html"><i class="fas fa-home"></i></a></i>
+        <div class="mask-wrapper">
+            <div class="blur-area">
+                <div class="motive">
+                    <h3>Our Motive</h3><br>
+                    <p>
+                    The informal economy workers and urban landless form a majority of those who do menial jobs in the cities. With low and irregular
+                    incomes and a lack of social support, many of them are spurred to continue working during the lockdown, often in unsafe conditions, thus
+                    exposing themselves and their families to additional risks. 
+                    Also majority of them lack social protection and access to quality health care making them vulnerable to coronavirus. <br><br>
+
+                    CoSafe has taken this initiative to provide these groups with the basic necessities such as <span style="color: crimson; font-weight: bold;">face masks, face shields, sanitizers and gloves</span> to work safe in such an environment.
+                    </p>
+                </div>
             </div>
-        </div>
-        <ul>
-            <li><a href="index.html" >HOME</a></li>
-            <li><a href="map.html">BRANCH</a></li>
-            <li><a href="news.html">NEWS</a></li>
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="about.html">ABOUT US</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-            <li><a href="donate.html" style="background-color: crimson; padding: 0.5rem 0.8rem">DONATE</a></li>
-        </ul>
-    </nav>
-    
-    <div class="mask-wrapper">
-        <div class="mask-blur-area">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum aperiam porro et corrupti neque nihil eligendi ab mollitia harum? Animi rem mollitia aperiam modi consequuntur possimus alias natus repudiandae ullam!
+            <div class="pink-area">
+                <div class="logo">
+                    <h4>CoSafe</h4>
+                </div>
+                <form action="#" id='donation-form'>
+                    <div class='info'>
+                        <label for="name">Name</label>
+                        <div id="name">
+                            <input type="text">
+                        </div>
+                        <label for="mail">E-mail</label>
+                        <div id="mail">
+                            <input type="email">
+                        </div>
+                        <label for="phone">Phone No.</label>
+                        <div id="phone">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="donate-item">
+                        What would you like to donate?
+                        <div class="items">
+                            <div class="item">
+                                <label><input type="checkbox" name="item" value="mask"> Face Mask</label>
+                            </div>
+                            <div class="item">
+                                <label><input type="checkbox" name="item" value="shiels"> Face Shield</label>
+                            </div>
+                            <div class="item">
+                                <label><input type="checkbox" name="item" value="sanitizer"> Sanitizer</label>
+                            </div>
+                            <div class="item">
+                                <label><input type="checkbox" name="item" value="glove"> Gloves</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit-btn">
+                        <button>Submit</button>
+                    </div>
+                    <div class="remark">
+                        We will contact you soon!
+                    </div>
+                </form>
+            </div>
+            
         </div>
     </div>
+    
+    
 </body>
 </html>
