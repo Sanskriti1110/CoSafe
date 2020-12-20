@@ -1,31 +1,29 @@
 html{
     font-size: 62.5%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
 }
 
 .online-banner{
-    position: relative;
     height: 100vh;
     overflow: hidden;
     background: url(online-bg.jpg) no-repeat center;
     background-size: cover;
+}
+.banner-heading{
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 .banner-heading h1{
     position: absolute;
     top: 10%;
     right: 5%;
     font-size: 7.0rem;
-    font-family: 'Bubblegum Sans', cursive;
     text-transform: uppercase;
-    color: #f2395a;
-    -webkit-transform: skew(-5deg, -5deg) rotate(5deg);
-            transform: skew(-5deg, -5deg) rotate(5deg);
-    -webkit-transform-origin: center center;
-            transform-origin: center center;
-    text-shadow: 1px 1px #d10e31,
-                 2px 2px #d10e31,
-                 3px 3px #d10e31,
-                 4px 4px #d10e31,
-                 11px 11px 15px rgba(0,0,0,0.5);
+    color: brown;
+    text-shadow: 1px 1px brown,
+                 2px 2px brown,
+                 4px 4px 8px rgba(0,0,0,0.5);
     letter-spacing: 0.4rem;
     background-color: rgba(0, 0, 0, 0.901);
     padding: 1.0rem;
@@ -40,4 +38,261 @@ html{
     padding: 1.5rem;
     padding-left: 3.0rem; 
     font-size: 2.2rem;
+}
+.login{
+    position: absolute;
+    top: 30%;
+    right: 7%;
+    font-size: 2.5rem;
+    align-items: center;
+    background-color:  rgba(0, 0, 0, 0.851);
+    color: whitesmoke;
+    padding: 3.0rem;
+    display: flex;
+    flex-direction: column;
+}
+.login span{
+    text-align: center;
+    margin:2.0rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.login ul{
+    display: flex;
+    list-style: none;
+}
+.login ul li{
+    display: block;
+    margin-right: 5.0rem;
+    background-color: brown;
+    padding:2.0rem;
+    border-radius: 1.5rem;
+    width: 15.0rem;
+    text-align: center;
+}
+.login ul li:hover{
+    cursor: pointer;
+    background-color: rgb(196, 69, 69);
+}
+.placeicon{
+    font-family: fontawesome;
+    color: rgb(165, 158, 158);
+}
+.black-bg{
+    background: black;
+    width: 100%;
+    height: 100%;
+    padding: 5.0rem;
+    color: cornsilk;
+}
+.explore input{
+    width: 50%;
+    padding: 2.0rem;
+    padding-left: 5.0rem;
+    font-size: 2.4rem;
+    border-radius: 3.0rem;
+    border: none;
+    color: black;
+    background-color: rgb(175, 95, 111);
+}
+::placeholder{
+    padding-left: 1.0rem;
+    color: black;
+    word-spacing: 1.0rem;
+    letter-spacing: 1.0rem;
+}
+.explore input:focus{
+    outline: none;
+}
+::placeholder:focus{
+    display: hidden;
+}
+.course-list{
+    background:url(course-bg.jpg) no-repeat center;
+    background-size: cover;
+}
+.course-container{
+    width: 100%;
+    max-width: 250rem;
+    margin: 50px auto;
+    background-color: rgba(26, 25, 25, 0.507);
+    
+}
+.courses{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1.5rem;
+    grid-template-areas:
+            'c1 c2 c3 c4'
+            'c5 c6 c7 c8';
+}
+.course{
+    background-color: rgba(0, 0, 0, 0.774);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.0rem;
+    padding:5.0rem 2.0rem;
+}
+.course:hover{
+    cursor: pointer;
+    background-color: black;
+}
+
+.course h3{
+    margin-left: 2.0rem;
+    font-size: 3.0rem;
+    text-align: center;
+    text-justify: auto;
+    width: 60%;
+}
+.course .fab, .course .far, .course .fas{
+    font-size: 10.0rem;
+    width: 30%;
+}
+.c8 .fas{
+    font-size: 8.0rem;
+}
+
+.middle {
+    text-align: center;
+  }
+  
+  .pagination {
+    display: inline-block;
+    margin: 1.0rem;
+  }
+  
+  .pagination a {
+    color: white;
+    float: left;
+    padding: 0.8rem 1.6rem;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 0.1rem solid #ddd;
+    margin: 0 0.4rem;
+    font-size: 2.5rem;
+  }
+  
+  .pagination a.active {
+    background-color: lightseagreen;
+    color: black;
+    border: 0.1rem solid lightseagreen;
+  }
+  
+  .pagination a:hover:not(.active) {
+      background-color: lightslategray;
+      color: black;
+      border: 0.1rem solid lightslategray;
+    }
+
+@media screen and (max-width: 1750px){
+    .banner-heading p{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 1600px){
+    html{
+        font-size: 58%;
+    }
+}
+@media screen and (max-width: 1500px){
+    html{
+        font-size: 55%;
+    }
+    
+}
+@media screen and (max-width: 1380px){
+    .courses{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 1.5rem;
+        grid-template-areas:
+                'c1 c2 c3'
+                'c4 c5 c6'
+                'c7 c8 c8';
+    }
+}
+@media screen and (max-width: 1160px){
+    .banner-heading p{
+        position: absolute;
+        top: 55%;
+        width: 100%;
+        height: auto;
+        margin-bottom: 2.0rem;
+    }
+    .banner-heading h1{
+        position: absolute;
+        top: 3%;
+        right: 25%;
+        font-size:5rem ;
+    }
+    .login{
+        position: absolute;
+        top: 15%;
+        right: 25.5%;
+        font-size: 2.3rem;
+    }
+}
+@media screen and (max-width:1104px){
+    .courses{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 1.5rem;
+        grid-template-areas:
+                'c1 c2'
+                'c3 c4'
+                'c5 c6'
+                'c7 c8';
+    }
+    ::placeholder{
+        color: black;
+        word-spacing: 0.5rem;
+        letter-spacing: 0rem;
+    }
+}
+@media screen and (max-width:900px){
+    html{
+        font-size: 50%;
+    }
+}
+@media screen and (max-width:750px){
+    .courses{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 1.5rem;
+        grid-template-areas:
+                'c1'
+                'c2'
+                'c3'
+                'c4'
+                'c5'
+                'c6'
+                'c7'
+                'c8';
+    }
+    .banner-heading p{
+        position: absolute;
+        top: 48%;
+        width: 100%;
+        height: auto;
+        margin-bottom: 2.0rem;
+    }
+    .banner-heading h1{
+        position: absolute;
+        top: 3%;
+        right: 20%;
+        font-size:4rem ;
+    }
+    .login{
+        position: absolute;
+        top: 15%;
+        right: 20.5%;
+        font-size: 2.0rem;
+    }
+
 }
