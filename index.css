@@ -98,7 +98,7 @@ label #cancel{
         position: fixed;
         width: 100%;
         height: 100vh;
-        background-color: #34495e;
+        background-color: #111;
         top: 8.0rem;
         left: -100%;
         text-align: center;
@@ -338,7 +338,10 @@ footer{
     position: relative;
     font-size: 2.0rem;
   }
-  
+  .box .content ul{
+    padding-bottom: 2.0rem ;
+    border-bottom:0.2rem solid #1a1a1a ;
+  }
   .box .content:before{
     position: absolute;
     content: '';
@@ -419,6 +422,7 @@ footer{
   .right form input:focus,
   .right form .msgForm:focus{
     outline:none;
+    border: 0.2rem solid crimson;
   }
   .right form input{
     height: 3.5rem;
@@ -443,7 +447,7 @@ footer{
     background: #b11f1f;
   }
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1100px) {
     footer{
       position: relative;
       bottom: 0;

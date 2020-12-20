@@ -1,0 +1,43 @@
+html{
+    font-size: 62.5%;
+}
+
+.online-banner{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background: url(online-bg.jpg) no-repeat center;
+    background-size: cover;
+}
+.banner-heading h1{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    font-size: 7.0rem;
+    font-family: 'Bubblegum Sans', cursive;
+    text-transform: uppercase;
+    color: #f2395a;
+    -webkit-transform: skew(-5deg, -5deg) rotate(5deg);
+            transform: skew(-5deg, -5deg) rotate(5deg);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    text-shadow: 1px 1px #d10e31,
+                 2px 2px #d10e31,
+                 3px 3px #d10e31,
+                 4px 4px #d10e31,
+                 11px 11px 15px rgba(0,0,0,0.5);
+    letter-spacing: 0.4rem;
+    background-color: rgba(0, 0, 0, 0.901);
+    padding: 1.0rem;
+}
+.banner-heading p{
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    width: 25%;
+    color: blanchedalmond;
+    background-color: rgba(0, 0, 0, 0.951);
+    padding: 1.5rem;
+    padding-left: 3.0rem; 
+    font-size: 2.2rem;
+}
