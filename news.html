@@ -7,8 +7,102 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/829dc33e5b.js" crossorigin="anonymous"></script>
     <title>Document</title>
+    <style>
+        .cardbox
+        {
+            display: flex;
+            flex-direction: row;
+            height: 60%;
+            width: 97%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10%;
+        }
+        .card
+        {
+            font-family: 'Roboto Slab', serif;
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: auto;
+            height: auto;
+            width: 30%;
+            border-style: double;
+            border-width: 3px ;
+            border-radius: 20px;
+            border-color: tomato;
+            text-align: center
+            
+        }
+        
+        .bt
+        {
+            font-family: 'Roboto Slab', serif;
+            width: 40%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border: none;
+            background-color: tomato;
+            color: white;
+            font-size: 23px;
+            font-weight: 500;
+            padding: 7px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+        .bt:hover
+        {
+            background-color: rgb(240, 59, 3);
+        }
+        .desc
+        {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 95%;
+            font-size: 23px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        h1{
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-family: 'Roboto Slab', serif;
+            text-align: center;
+            font-size: 40px;
+        }
+        hr
+        {
+            border: 2px solid tomato;
+            border-radius: 1px;
+            width: 80%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 15px;
+        }
+        @media only screen and (max-width: 900px)
+        {
+            .cardbox
+            {
+                flex-direction: column;
+                margin-bottom: 0%;
+            }
+            .card
+        {
+           margin-top: 10px;
+            width: 80%;
+            margin-bottom: 10px;
+            
+        }
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -34,5 +128,44 @@
             <li><a href="donate.html" style="background-color: crimson; padding: 0.5rem 0.8rem">DONATE</a></li>
         </ul>
     </nav>
+    <h1>Check out the headlines Co-Safe has been making!</h1>
+    <hr>
+    <div class="cardbox">
+        
+        <div class="card">
+        <img src="wing-airplane-with-city-background.jpg" style="height: 200px ;width: auto;  border-radius: 20px;  padding: 5px;" alt="">
+        <h3 class="desc">Co-Safe plans to help tourism industry struggling to get back on it's legs. Brighter days ahead.</h3>
+        <button class="bt">Read More</button>
+        </div>
+        <div class="card">
+            <img src="city-with-people-walking-out-focus.jpg" style="height: 200px ;width: auto; border-radius: 20px; padding: 5px;" alt="">
+            <h3 class="desc">People finally getting out of their houses after the pandemic as the situation lightens. Know how safe comes into the picture.</h3>
+            <button class="bt">Read More</button>
+        </div>
+
+        <div class="card">
+        <img src="male-female-students-wear-masks-stand-front-university.jpg" style="height: 200px;width: auto;  border-radius: 20px;  padding: 5px;" alt="">
+        <h3 class="desc">Back to school with Co-Safe! Many colleges to be opening soon, students to follow proper precautions.</h3>
+        <button class="bt">Read More</button>
+        </div>
+
+    </div>
+    <div class="cardbox">
+        
+        <div class="card">
+            <img src="doctor-hold-antiseptic-masks-his-hand.jpg" style="height: 200px ;width: auto; border-radius: 20px;padding: 5px;" alt="">
+            <h3 class="desc">Covid vaccine Breakthrough! Co-safe to help countries in the vaccination process and transportation.</h3>
+            <button class="bt">Read More</button>
+        </div>
+    
+    <div class="card">
+    <img src="merry christmas.png" style="height: 200px ;width: auto;  border-radius: 20px;padding: 5px;" alt="">
+    <h3 class="desc">Co-Safe's Merry Chrsitmas and a Joyous New Year Celebrations</h3>
+    <button class="bt">Read More</button>
+    </div>
+
+    
+</div>
+</div>
 </body>
 </html>
