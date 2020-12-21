@@ -75,12 +75,12 @@ label #cancel{
 #check{
     display: none;
 }
-@media  (max-width: 1118px){
+@media screen and (max-width: 1118px){
     nav .logo{
         left: 8%;
     }
 }
-@media  (max-width: 944px){
+@media screen and (max-width: 944px){
     nav .logo{
         left: 6%;
         top: 2.0rem;
@@ -90,7 +90,7 @@ label #cancel{
         font-size: 1.7rem;
     }
 }
-@media (max-width: 1420px){
+@media screen and (max-width: 1420px){
     label #btn{
         display: block;
     }
@@ -214,44 +214,55 @@ label #cancel{
     background-size: cover;
 }
 .slide:nth-child(4){
-    background: url(banner2-laptops.jpeg) no-repeat center;
-    background-size: cover;
-}
-.slide:nth-child(5){
     background: url(banner6-eLearning.png) no-repeat center;
     background-size: cover;
 }
-.slide:nth-child(6){
+.slide:nth-child(5){
     background: url(banner5-unemployment.jpg) no-repeat center;
     background-size: cover;
     border-right: none;
 }
-
-.banner-text h2 {
-    position: absolute;
-    padding-top: 50%;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    font-size: 12rem;
-    
+.banner{
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0,0,0,0.45) ;
 }
+
 .banner-text p{
    visibility: hidden;
    top: 50%;
    left: 50%;
    transform: translate(-50%,-50%);
 }
-.slide:hover{
-    flex-grow:6;
-    cursor: pointer;
+.banner-text p span{
+  display: inline-block;
+  border-bottom: 0.2rem solid crimson;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 1.0rem;
+  
+}
+.arrow .fas{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  font-size: 5.0rem;
+}
+.slide a{
+  text-decoration: none;
+  color: white;
+}
+.arrow a{
+  color: black;
+}
+
+.slide:hover, .slide:focus{
+    flex-grow:5;
 }
 .slide:hover .banner{
-    width: 50.0rem;
-    height: 25.0rem;
-    background: inherit;
+    width: 40.0rem;
+    height: 22.0rem;
+    background: rgba(0, 0, 0, 0.808);
     position: absolute;
     overflow: hidden;
     top: 50%;
@@ -259,54 +270,45 @@ label #cancel{
     border-radius: 0.5rem;
     transform: translate(-50%,-50%);
 }
+
 .slide:hover .banner:before{
-    width: 60.0rem;
-    height: 35.0rem;
+    width: 40.0rem;
     content: "";
     position: absolute;
     top: -2.5rem;
     left: -2.5rem;
     bottom: 0;
     right: 0;
-    background: inherit;
-    box-shadow: inset 0 0 0 50.0rem rgba(255,255,255,0.2);
+    background: rgba(0, 0, 0, 0.616);
+    box-shadow: inset 0 0 0 50.0rem rgba(192, 185, 185, 0.2);
     filter: blur(1.0rem);
 }
-*/
 .slide:hover .banner-text p{
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 50.0rem;
-    height: 25.0rem;
+    width: 40.0rem;
     visibility: visible;
     text-align: center;
-    background:inherit;
-    padding: 1.5rem;
+    padding: 1.0rem;
     border-radius: 2.5rem;
-    color: black;
+    color: white;
     font-size: 2.4rem;
     
 }
-.slide:hover .banner-text h2{
-    visibility: hidden;
+#first{
+  font-size: 3.0rem;
 }
-@media screen and (max-width:1630px){
-    nav ul li{
-        margin-left: 2.0rem;
-    }
+#second{
+  font-size: 2.0rem;
 }
-@media screen and (max-width:1112px){
+
+
+@media screen and (max-width:768px){
     .wrapper{
         display: block;
         width: 100%;
         height: 35%;  
-    }
-    .banner-text h2{
-      display: none;
-    }
-    .banner-text p{
-      visibility: visible;
     }
     .slide{
         display: block;
@@ -315,7 +317,63 @@ label #cancel{
         border: 0.2rem solid black;
         border-left:0.4rem solid black;
     }
-    
+    .arrow .fas{
+      position: absolute;
+      top: 45%;
+      left: 85%;
+      transform: rotateZ(-90deg);
+      font-size: 3.0rem;
+      background-color: black;
+      padding: 1.0rem;
+      border-radius: 50%;
+      color: white;
+    }
+    .banner{
+      width: 30.0rem;
+      height: 22.0rem;
+      background: rgba(0, 0, 0, 0.808);
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      left: 50%;
+      border-radius: 0.5rem;
+      transform: translate(-50%,-50%);   
+      
+  }
+  
+    .banner:before{
+      width: 30.0rem;
+      content: "";
+      position: absolute;
+      top: -2.5rem;
+      left: -2.5rem;
+      bottom: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.616);
+      box-shadow: inset 0 0 0 50.0rem rgba(192, 185, 185, 0.2);
+      filter: blur(1.0rem);
+  }
+    .banner-text p{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 30.0rem;
+      visibility: visible;
+      text-align: center;
+      padding: 1.0rem;
+      border-radius: 2.5rem;
+      color: white;
+      font-size: 2.4rem;
+      
+  }
+  #first{
+    font-size: 2.5rem;
+  }
+  #second{
+    font-size: 1.5rem;
+  }
+  
+  
 }
 
 
