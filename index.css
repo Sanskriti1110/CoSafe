@@ -90,7 +90,7 @@ label #cancel{
         font-size: 1.7rem;
     }
 }
-@media screen and (max-width: 1420px){
+@media screen and (max-width: 1535px){
     label #btn{
         display: block;
     }
@@ -367,13 +367,19 @@ label #cancel{
       
   }
   #first{
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
   #second{
-    font-size: 1.5rem;
+    font-size: 1.9rem;
   }
   
-  
+}
+@media screen and (max-width:455px){
+  .arrow .fas{
+    font-size: 1.5rem;
+    position: absolute;
+    left: 90%;
+  }
 }
 
 
