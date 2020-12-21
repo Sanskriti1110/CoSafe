@@ -541,4 +541,9 @@ footer{
       margin: 0.5rem 0;
     }
   }
+  @media screen and (max-width: 650px){
+    footer{
+      padding: 4.0rem 5.0rem;
+    }
+  }
   
