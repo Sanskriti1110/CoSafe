@@ -41,8 +41,9 @@ html{
 
 
 .hotel-form{
-    margin: 1.0rem 10.0rem;
+    margin: 1.0rem 6.0rem;
     padding: 2.0rem;
+    
 }
 .location{
     display: flex;
@@ -288,6 +289,10 @@ input:focus, .hotel-book button:focus{
     }
 }
 @media screen and (max-width:1140px){
+    .hotel-form{
+        margin: 1.0rem 1.0rem;
+        
+    }
     .stack{
         display: flex;
         flex-direction: column;
@@ -331,7 +336,6 @@ input:focus, .hotel-book button:focus{
         padding: 0.5rem;
     }
     
-    
     .cost{
         top: 0;
         left: 0;
@@ -367,5 +371,25 @@ input:focus, .hotel-book button:focus{
 @media screen and (max-width:680px){
     html{
         font-size: 40%;
+    }
+}
+@media screen and (max-width:580px){
+    html{
+        font-size: 35%;
+    }
+}
+@media screen and (max-width:506px){
+    html{
+        font-size: 30%;
+    }
+}
+@media screen and (max-width:520px){
+    html{
+        font-size: 25%;
+    }
+}
+@media screen and (max-width:360px){
+    html{
+        font-size: 23%;
     }
 }
