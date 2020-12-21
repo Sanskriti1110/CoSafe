@@ -374,23 +374,17 @@ label #cancel{
   }
   
 }
-@media screen and (max-width:465px){
+@media screen and (max-width:600px){
   .arrow .fas{
     font-size: 1.5rem;
     position: absolute;
     left: 90%;
   }
-  .banner-text p{
-    font-size: 2.0rem;
-  }
-  html{
-    font-size: 55%;
-  }
   #first{
-    font-size: 50%;
+    font-size: 2.2rem;
   }
   #second{
-    font-size: 45%;
+    font-size:1.7rem ;
   }
 }
 
