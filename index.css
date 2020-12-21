@@ -380,11 +380,17 @@ label #cancel{
     position: absolute;
     left: 90%;
   }
+  .banner-text p{
+    font-size: 2.0rem;
+  }
+  html{
+    font-size: 55%;
+  }
   #first{
     font-size: 2.2rem;
   }
   #second{
-    font-size:1.7rem ;
+    font-size:1.8rem ;
   }
 }
 
