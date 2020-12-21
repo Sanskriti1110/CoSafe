@@ -363,7 +363,7 @@ label #cancel{
       padding: 1.0rem;
       border-radius: 2.5rem;
       color: white;
-      font-size: 2.2rem;
+      font-size: 2.4rem;
       
   }
   #first{
@@ -374,11 +374,14 @@ label #cancel{
   }
   
 }
-@media screen and (max-width:455px){
+@media screen and (max-width:465px){
   .arrow .fas{
     font-size: 1.5rem;
     position: absolute;
     left: 90%;
+  }
+  .banner-text p{
+    font-size: 2.0rem;
   }
 }
 
