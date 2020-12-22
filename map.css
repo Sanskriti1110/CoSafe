@@ -63,12 +63,13 @@
   transform: translateX(-50%);
   overflow: overlay;
 }
+
 .distribution-map .map-point:active, .distribution-map .map-point:hover {
   margin: 0;
   padding: 0;
   opacity: 1;
-  width: 250px;
-  height: 200px;
+  width: 17rem;
+  height: 12rem;
   color: #e5e5e5;
   z-index: 1;
   -webkit-transition: opacity 0.25s ease-in-out , width 0.25s ease-in-out , height 0.25s ease-in-out ;
@@ -82,4 +83,9 @@
   -webkit-transition: opacity 0.25s ease-in-out  0.25s, height 0.25s ease-in-out , overflow 0.25s ease-in-out ;
   transition: opacity 0.25s ease-in-out  0.25s, height 0.25s ease-in-out , overflow 0.25s ease-in-out  ;
   overflow: hidden;
+}
+@media screen and (max-width:863px){
+  .distribution-map > img {
+    width: 100%;
+  }
 }
