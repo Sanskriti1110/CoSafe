@@ -250,8 +250,11 @@ html{
     }
     ::placeholder{
         color: black;
-        word-spacing: 0.5rem;
-        letter-spacing: 0rem;
+        width: 100%;
+    }
+    .explore input{
+        width: 100%;
+        font-size: 2.5rem;
     }
 }
 @media screen and (max-width:900px){
@@ -281,6 +284,7 @@ html{
         width: 100%;
         height: auto;
         margin-bottom: 2.0rem;
+        font-size: 2.1rem;
     }
     .banner-heading h1{
         position: absolute;
@@ -295,4 +299,113 @@ html{
         font-size: 2.0rem;
     }
 
+}
+@media screen and (max-width:680px){
+    .banner-heading p{
+        font-size: 1.8rem;
+    }
+    .banner-heading h1{
+        position: absolute;
+        top: 3%;
+        left: 15%;
+        font-size:3rem ;
+    }
+    .login{
+        position: absolute;
+        top: 15%;
+        left: 15%;
+        font-size: 1.7rem;
+    }
+    .explore input::placeholder{
+        color: black;
+        width: 100%;
+        letter-spacing: 0.1rem;
+    }
+}
+@media screen and (max-width:471px){
+    .banner-heading h1{
+        position: absolute;
+        top: 3%;
+        left: 15%;
+        font-size:2.5rem ;
+        text-align: center;
+    }
+    .login{
+        position: absolute;
+        top: 12%;
+        left: 15%;
+        font-size: 1.5rem;
+    }
+    .banner-heading p{
+        position: absolute;
+        top: 40%;
+        width: 100%;
+        height: auto;
+        margin-bottom: 2.0rem;
+    }
+    .login ul li{
+        display: block;
+        margin-right: 3.0rem;
+        background-color: brown;
+        padding:1.0rem;
+        border-radius: 1.5rem;
+        width: 10.0rem;
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+}
+@media screen and (max-width:412px){
+    .banner-heading h1{
+        position: absolute;
+        top: 3%;
+        left: 13%;
+        font-size:2rem ;
+    }
+    .login{
+        position: absolute;
+        top: 9%;
+        left: 11%;
+        font-size: 1.5rem;
+    }
+    .banner-heading p{
+        position: absolute;
+        top: 38%;
+        width: 100%;
+        height: auto;
+        margin-bottom: 2.0rem;
+    }
+    .login ul li{
+        display: block;
+        margin-right: 3.0rem;
+        background-color: brown;
+        padding:1.0rem;
+        border-radius: 1.5rem;
+        width: 10.0rem;
+        text-align: center;
+        font-size: 2rem;
+    }
+    .login{
+        font-size: 2.0rem;
+        align-items: center;
+        background-color:  rgba(0, 0, 0, 0.851);
+        color: whitesmoke;
+        padding: 2.0rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .login span{
+        text-align: center;
+        margin:1.0rem;
+        text-transform: uppercase;
+    }
+}
+@media screen and (max-width:390px){
+    .course{
+        min-width: 25rem;
+    }
+    .course h3{
+        font-size: 2.5rem;
+    }
 }
